@@ -61,7 +61,7 @@ class PLL_Walker_Dropdown extends Walker {
 		}
 		
 		$output .= sprintf(
-			'<select name="%1$s" %2$s%3$s>' . "\n" . '%4$s' . "\n" . '</select>'."\n",
+			'<select name="%1$s" %2$s%3$s class="form-control">' . "\n" . '%4$s' . "\n" . '</select>'."\n",
 			($name = empty($args['name']) ? 'lang_choice' : esc_attr($args['name'])),
 			isset($args['id']) && !$args['id'] ? '' : ' id="' . (empty($args['id']) ? $name : esc_attr($args['id'])) . '"',
 			empty($args['class']) ? '' : ' class="' . esc_attr($args['class']) . '"',
